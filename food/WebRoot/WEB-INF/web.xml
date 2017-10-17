@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+  <display-name></display-name>
+  <servlet>
+    <servlet-name>UploadServlet</servlet-name>
+    <servlet-class>com.servlet.UploadServlet</servlet-class>
+  </servlet>
+    <servlet-mapping>
+    <servlet-name>UploadServlet</servlet-name>
+    <url-pattern>/UploadServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UpdateServlet</servlet-name>
+    <servlet-class>com.servlet.UpdateServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>IndexServlet</servlet-name>
+    <servlet-class>com.servlet.IndexServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DetailsServlet</servlet-name>
+    <servlet-class>com.servlet.DetailsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ProductListServlet</servlet-name>
+    <servlet-class>com.servlet.ProductListServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ProductCategoryListServlet</servlet-name>
+    <servlet-class>com.servlet.ProductCategoryListServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>NewsServlet</servlet-name>
+    <servlet-class>com.servlet.NewsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>MessageServlet</servlet-name>
+    <servlet-class>com.servlet.MessageServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>NewsDetailsServlet</servlet-name>
+    <servlet-class>com.servlet.NewsDetailsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ErrorServlet</servlet-name>
+    <servlet-class>com.servlet.ErrorServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SuccessServlet</servlet-name>
+    <servlet-class>com.servlet.SuccessServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>FoodsListServlet</servlet-name>
+    <servlet-class>com.servlet.FoodsListServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>FoodsManagerServlet</servlet-name>
+    <servlet-class>com.servlet.FoodsManagerServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>FoodDelServlet</servlet-name>
+    <servlet-class>com.servlet.FoodDelServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>FoodsCategoryListServlet</servlet-name>
+    <servlet-class>com.servlet.FoodsCategoryListServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateServlet</servlet-name>
+    <url-pattern>/UpdateServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>IndexServlet</servlet-name>
+    <url-pattern>/IndexServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DetailsServlet</servlet-name>
+    <url-pattern>/DetailsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ProductListServlet</servlet-name>
+    <url-pattern>/ProductListServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ProductCategoryListServlet</servlet-name>
+    <url-pattern>/ProductCategoryListServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>NewsServlet</servlet-name>
+    <url-pattern>/NewsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MessageServlet</servlet-name>
+    <url-pattern>/MessageServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>NewsDetailsServlet</servlet-name>
+    <url-pattern>/NewsDetailsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ErrorServlet</servlet-name>
+    <url-pattern>/ErrorServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SuccessServlet</servlet-name>
+    <url-pattern>/SuccessServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FoodsListServlet</servlet-name>
+    <url-pattern>/FoodsListServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FoodsManagerServlet</servlet-name>
+    <url-pattern>/FoodsManagerServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FoodDelServlet</servlet-name>
+    <url-pattern>/FoodDelServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FoodsCategoryListServlet</servlet-name>
+    <url-pattern>/FoodsCategoryListServlet</url-pattern>
+  </servlet-mapping>	
+  
+  
+  
+  
+  <filter>
+  	<filter-name>EncodingFilter</filter-name>
+  	<filter-class>com.filter.CharactorEncodingFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  		<filter-name>EncodingFilter</filter-name>
+  		<url-pattern>/*</url-pattern>
+  </filter-mapping>
+  
+  <filter>
+  	<filter-name>SecurityFilter</filter-name>
+  	<filter-class>com.filter.SecurityFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  		<filter-name>SecurityFilter</filter-name>
+  		<url-pattern>/script/*</url-pattern>
+  </filter-mapping>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
