@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.entity">
+	<class name="News" table="news">
+		<id name="id" column="id">
+		</id>
+		<property name="title" column="Title"/>
+		<property name="content" column="Content"/>
+		<property name="publishDate" column="PublishDate"/>
+	</class>
+</hibernate-mapping>

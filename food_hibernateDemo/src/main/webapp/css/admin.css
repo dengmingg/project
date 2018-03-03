@@ -1,0 +1,117 @@
+﻿body {
+    font-family: "微软雅黑","宋体";
+    font-size: 13px;
+    color: #666;
+    margin: 0;
+    padding: 0;
+}
+ul,li,a
+{
+    margin:0px;
+    padding:0px;
+    text-decoration:none;
+    list-style:none;
+}
+
+.clear{
+    clear:both;
+}
+#page{
+    width:980px;
+    margin:0px auto;
+}
+
+#corpTitle {
+    color:#FFFFFF;
+    font-size: 36px;
+    text-align: center;
+    white-space: nowrap;
+    font-family: "微软雅黑","宋体";
+    width:300px;
+
+}
+
+#rightTitle {
+    color:#FFFFFF;
+    font-size: 23px;
+    white-space: nowrap;
+    font-family: "微软雅黑","宋体";
+    margin-left:800px;
+
+}
+#header
+{
+    height:100px;
+    background-color:#AC000B;
+}
+
+#nav
+{
+    width:150px;
+    float:left;
+}
+.menu
+{
+    margin-top:5px;
+    border:1px solid  ;
+    border-color:ActiveCaption;
+    padding-left:5px;
+
+}
+.menu li
+{
+
+    border:1px solid;
+    height:50px;
+    font-size:18px;
+    line-height:50px;
+    text-align:center;
+     background-color:#AC000B;
+     color:#fff;
+     padding-left:0px;
+
+}
+#container{
+    line-height: 1.5;
+    float:left;
+    padding:10px;
+    width:800px;
+}
+#container .data-list{
+    width:680px;
+    text-align: center;
+}
+#container .data-list td{
+    border-top: dotted 1px gray;
+}
+
+#footer{
+    height:100px;
+    background-color:#353535;
+    margin-top:5px;
+    padding-top:2px;
+    text-align:center;
+    color:#FFF;
+
+}
+ 
+
+/*美食编辑foodsManager*/
+.tbFoods
+{
+    border:1px;
+    padding-left:10px;
+}
+.tbFoods td
+{
+    height:30px;
+}
+.foodsDesc
+{
+    width:680px;
+    height:100px;
+}
+.tbFoods .tip
+{
+    color:red;
+}

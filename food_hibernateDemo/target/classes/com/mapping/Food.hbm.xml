@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.entity">
+	<class name="Food" table="foods">
+		<id name="id" column="id">
+			<generator class="identity">
+				<param name="identity"></param>
+			</generator>
+		</id>
+		<property name="chineseName" column="ChineseName"/>
+		<property name="englishName" column="EnglishName"/>
+		<property name="description" column="Description"/>
+		<many-to-one name="category" lazy="false" column="CategoryId" class="Category"/>
+	</class>
+</hibernate-mapping>
